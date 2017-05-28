@@ -1,0 +1,10 @@
+* {
+    font-family: Georgia;
+}
+h1, h2, h3 {
+       color: crimson;
+       background-color: darkmagenta;
+}/*This changes color of elements h1, h2 and h3 to green */
+p {
+  font-size: 20px;
+}
