@@ -6,5 +6,6 @@ h1, h2, h3 {
        background-color: darkmagenta;
 }/*This changes color of elements h1, h2 and h3 to green */
 p {
+  color: #452F73;
   font-size: 20px;
 }
