@@ -1,10 +1,13 @@
 * {
     font-family: Georgia;
 }
-h1, h2, h3 {
-       color: rgb(123,20,255);
+h1, h3 {
+       color: rgba(123,20,255,0.6);
        background-color: darkmagenta;
-}/*This changes color of elements h1, h2 and h3 to green */
+}/*This changes color of elements h1 and h3 to green */
+h2 {
+  color : hsla(350, 58.8%, 42.0%,0.9);
+}
 p {
   color: #452F73;
   font-size: 20px;
