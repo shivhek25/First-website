@@ -5,10 +5,14 @@ h1, h3 {
        color: rgba(45,20,78,0.6);
        background-color: darkmagenta;
        font-size: 2em;
+       font-style: italic;
+       text-align: center;
 }/*This changes color of elements h1 and h3 to green */
 h2 {
   color : hsla(350, 58.8%, 42.0%,0.9);
   font-size: 200%;
+  font-weight : bold;
+  text-transform : uppercase;
 }
 p {
   color: #452F73;
@@ -16,4 +20,5 @@ p {
   font-size: 20px;
   line-height : 1.5 em;
   word-spacing : 0.2 em;
+  letter-spacing : 0.02 em;
 }
