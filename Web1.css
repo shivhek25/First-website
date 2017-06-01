@@ -8,11 +8,11 @@ h1, h3 {
        font-style: italic;
        text-align: center;
 }/*This changes color of elements h1 and h3 to green */
-h2 {
+h2.main {
   color : hsla(350, 58.8%, 42.0%,0.9);
   text-transform : uppercase;
 }
-p {
+p.main {
   color: #452F73;
   font-family : Helvetica, Garamond, serif;
   font-size: 20px;
@@ -21,12 +21,12 @@ p {
   letter-spacing : 0.02 em;
 }
 
-.Main{
+.Main, #Age{
   font-weight : bold;
+}
+.marks{
+  font-style: italic;
 }
 h2.main{
   font-size: 200%;
-}
-#Age{
-  font-style: italic;
 }
