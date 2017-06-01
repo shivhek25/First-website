@@ -22,3 +22,10 @@ p {
   word-spacing : 0.2 em;
   letter-spacing : 0.02 em;
 }
+
+#Name{
+  font-weight : bold;
+}
+#Age{
+  font-style: italic;
+}
