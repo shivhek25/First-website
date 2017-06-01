@@ -10,8 +10,6 @@ h1, h3 {
 }/*This changes color of elements h1 and h3 to green */
 h2 {
   color : hsla(350, 58.8%, 42.0%,0.9);
-  font-size: 200%;
-  font-weight : bold;
   text-transform : uppercase;
 }
 p {
@@ -23,8 +21,11 @@ p {
   letter-spacing : 0.02 em;
 }
 
-#Name{
+.Main{
   font-weight : bold;
+}
+h2.main{
+  font-size: 200%;
 }
 #Age{
   font-style: italic;
