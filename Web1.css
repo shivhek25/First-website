@@ -1,5 +1,6 @@
 * {
     font-family: "Courier New", Helvetica, sans-serif;
+    border: 2px solid rgb(255,0,0);
 }
 h1, h3 {
        color: rgba(45,20,78,0.6);
@@ -20,7 +21,9 @@ p.main {
   word-spacing : 0.2 em;
   letter-spacing : 0.02 em;
 }
-
+img{
+  border-radius: 50px;
+}
 .Main, #Age{
   font-weight : bold;
 }
