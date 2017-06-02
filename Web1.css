@@ -1,6 +1,6 @@
 * {
     font-family: "Courier New", Helvetica, sans-serif;
-    border: 2px solid rgb(255,0,0);
+    border: 1px solid rgba(0,0,0,0.3);
 }
 h1, h3 {
        color: rgba(45,20,78,0.6);
@@ -8,6 +8,7 @@ h1, h3 {
        font-size: 2em;
        font-style: italic;
        text-align: center;
+       padding: 20px 0px;
 }/*This changes color of elements h1 and h3 to green */
 h2.main {
   color : hsla(350, 58.8%, 42.0%,0.9);
@@ -23,6 +24,7 @@ p.main {
 }
 img{
   border-radius: 50px;
+  margin: 5px;
 }
 .Main, #Age{
   font-weight : bold;
