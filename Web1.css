@@ -1,5 +1,6 @@
 * {
     font-family: "Courier New", Helvetica, sans-serif;
+    box-sizing: border-box;
     border: 1px solid rgba(0,0,0,0.3);
 }
 h1, h3 {
