@@ -24,7 +24,12 @@ p.main {
 }
 img{
   border-radius: 50px;
-  margin: 5px;
+  margin: 5px 5px;
+  width: 20%;
+  margin : auto;
+}
+ol{
+  display : inline;
 }
 .Main, #Age{
   font-weight : bold;
