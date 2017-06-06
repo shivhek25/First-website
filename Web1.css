@@ -2,11 +2,17 @@
     font-family: "Courier New", Helvetica, sans-serif;
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,0.3);
+    /*background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg");*/
+    background-image: -webkit-linear-gradient(#FFD194 , #BC1324);
+    background-repeat:no-repeat;
+    background-position: left top;
+    /*background-size: contain;*/
+    background-attachment: fixed;
 }
 h1, h3 {
        color: rgba(45,20,78,0.6);
        background-color: darkmagenta;
-       font-size: 2em;
+       font-size: 1em;
        font-style: italic;
        text-align: center;
        padding: 20px 0px;
@@ -17,6 +23,7 @@ h2.main {
 }
 h1{
   position:fixed;
+  left: 900px;
 }
 p.main {
   color: #452F73;
@@ -31,6 +38,7 @@ img{
   margin: 5px 5px;
   width: 20%;
   margin : auto;
+  display: block;
 }
 ol{
   display : inline;
