@@ -52,3 +52,8 @@ ol{
 h2.main{
   font-size: 200%;
 }
+table, td, th{
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
