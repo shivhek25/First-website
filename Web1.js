@@ -11,3 +11,8 @@ console.log(Math.floor(Math.random()*100));
   hey there*/
 var nyName="Shivam";
 console.log("My name is"+myName);
+var details= ['Shivam','Singhal'];
+console.log(details);
+details.push('Hey','there');
+console.log(details.length);
+console.log(details);
