@@ -1,6 +1,6 @@
-/*alert('Welcome to my page!');
+alert('Welcome to my page!');
 var name=document.getElementsByClassName('Main Name');
-alert(name);*/
+alert(name);
 main()
 {
   $('.main').hide();
