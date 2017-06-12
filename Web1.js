@@ -10,9 +10,9 @@ function main()
   $('.values').hide();
   $('.headings').on('click',function(){
     //$('.values').show();
-    //$(this).next().toggle();
-    $(this).next().slideToggle(1000);
+    $(this).next().toggle();
     $(this).toggleClass('active');
+    //$(this).next().slideToggle(1000);
     $(this).text('Seen');
   });
 
