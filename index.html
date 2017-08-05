@@ -11,10 +11,6 @@
    body{
      background-image: -webkit-linear-gradient(left, #567AEB, #49EE82);
    }
-     .header{
-       height: 50px;
-       padding:0 0;
-     }
      .icon_group{
        padding: 5px 0;
        padding-left: 850px;
@@ -33,27 +29,47 @@
        color: #CA141F;
        font-family: Pacifico;
      }
+     .content{
+       width: 900px;
+       margin-top: 150px;
+       border: 1.2px solid black;
+       padding: 150px;
+     }
+     .footer{
+       margin-top: 20px;
+       height: 40px;
+       background-color: purple;
+     }
+     #footer_text{
+       float:right;
+       font-size: 18px;
+       padding-right: 15px;
+       padding-top: 5px;
+       color: yellow;
+     }
    </style>
   </head>
   <body>
-    <div class="header col-md-12">
     <div class="icon_group">
-        <a href="tel:9093244444"><span class="icons glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
-        <a href="mailto: shivamsinghal0610@gmail.com"><span class="icons glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
-        <a href="https://www.facebook.com/people/Shivam-Singhal/100006888462062"><i class="fa fa-facebook-official icons" style="font-size:24px;color:rgb(51,122,183)"></i></a>
-        <a href="https://plus.google.com/112702240190275218514"><i class="fa fa-google-plus-official icons" style="font-size:24px;color:rgb(51,122,183)"></i></a>
-        <a href="https://github.com/shivhek25"><i class="fa fa-github-square icons" style="font-size:24px;color:rgb(51,122,183)"></i></a>
-        <a href="https://www.instagram.com/shivam_singhal10/"><i class="fa fa-instagram icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
-    </div>
+      <a href="tel:9093244444"><span class="icons glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+      <a href="mailto: shivamsinghal0610@gmail.com"><span class="icons glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+      <a href="https://www.facebook.com/people/Shivam-Singhal/100006888462062" target="_blank"><i class="fa fa-facebook-official icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
+      <a href="https://plus.google.com/112702240190275218514" target="_blank"><i class="fa fa-google-plus-official icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
+      <a href="https://github.com/shivhek25" target="_blank"><i class="fa fa-github-square icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
+      <a href="https://www.instagram.com/shivam_singhal10/" target="_blank"><i class="fa fa-instagram icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
     </div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img src="images/IMG_7615.jpg" alt="Brothers"></img>
+        </div>
+        <div class="item">
+          <img src="images/IMG_8903.jpg" alt="BMUN 17"></img>
         </div>
         <div class="item">
           <img src="images/IMG_9338.jpg" alt="Getting awarded"></img>
@@ -70,22 +86,27 @@
     </div>
     <div class="container directioner">
       <div class="col-md-3">
-        <img src="images/quals.png" style="width:50%;margin-top:10px;margin-left:90px"/>
+        <img src="images/quals.png" style="width:50%;margin-top:10px;margin-left:90px"></img>
         <h3 class="text1" style="margin-top:20px;margin-left:50px">QUALIFICATIONS</h3>
-        <!--Add link for navigation within page here-->
       </div>
       <div class="col-md-3">
-        <img src="images/project.png" style="width:65%;margin-left:50px;margin-top:10px"/>
+        <img src="images/project.png" style="width:65%;margin-left:50px;margin-top:10px"></img>
         <h3 class="text1" style="margin-top:33px;margin-left:85px">PROJECTS</h3>
       </div>
       <div class="col-md-3">
-        <img src="images/blog.jpg" style="width:50%;height:150px;margin-left:65px;margin-bottom:10px"/>
+        <img src="images/blog.jpg" style="width:50%;height:150px;margin-left:65px;margin-bottom:10px"></img>
         <h3 class="text1" style="margin-top:2px;margin-left:80px">BLOGS</h3>
       </div>
       <div class="col-md-3">
-        <img src="images/conme.png" style="width:70%;margin-left:10px;margin-top:60px"/>
+        <img src="images/conme.png" style="width:70%;margin-left:10px;margin-top:60px"></img>
         <h3 class="text1" style="margin-top:45px;margin-left:30px">CONTACT ME</h3>
       </div>
+    </div>
+    <div class="content container">
+
+    </div>
+    <div class="footer">
+      <div id="footer_text">&copy Shivam Singhal</div>
     </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="assets/js/bootstrap.min.js"></script>
