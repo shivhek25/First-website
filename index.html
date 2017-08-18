@@ -67,11 +67,24 @@
       function mouseofftop(y){
         y.style.color="black";
       }
-      function inst_check()
+      function inst_check(p)
       {
-        var p= document.contact.inst_name.value;
-        if(p == "NIT" || p == "NITDGP" || p == "NitDGP" || p == "NIT DGP" || p == "Nit Dgp")
+        if(p == "NIT DGP")
          alert("Hey, we are in the same college!");
+        else if(p == "SRM Chennai")
+        {
+          if(s=="Mahek")
+           alert("Hi, Mahek!");
+          else
+           prompt("Hey, do you know Mahek ?");
+        }
+        else
+         alert("Nice to meet you ! :)");
+      }
+      function dialer_check()
+      {
+        if(confirm("Do you wish to call up Shivam ?"))
+         window.location.href = "tel:9093244444";
       }
       var s = prompt("Enter your name :");
       document.write('<marquee onmouseover="mouseontop(this,s);stop()" onmouseout="mouseofftop(this),start()">' +"Welcome to my website !" +'</marquee>');
@@ -135,8 +148,14 @@
       <div>
         <form name="contact">
           Phone number :<input type="text" name="pnum"/><br/>
-          Institution :<input type="text" name="inst_name"/><br/>
-          <input type="button" value="Submit" onclick="inst_check()"/><br/>
+          <input type="button" value="Submit" onclick="dialer_check()"/><br/>
+          <select onchange="inst_check(this.value)" name="inst_name">
+            <option name="">Select your college</option>
+            <option name="NIT DGP">NIT DGP</option>
+            <option name="NIT ROURKELA">NIT ROURKELA</option>
+            <option name="SRM Chennai">SRM Chennai</option>
+            <option name="St. Xaviers' Calcutta">St. Xaviers' Calcutta</option>
+          </select>
         </form>
       </div>
       <div id="footer_text">&copy Shivam Singhal</div>
