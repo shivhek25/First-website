@@ -78,7 +78,7 @@
           else
            prompt("Hey, do you know Mahek ?");
         }
-        else
+        else if(p!="")
          alert("Nice to meet you ! :)");
       }
       function dialer_check()
@@ -149,12 +149,12 @@
         <form name="contact">
           Phone number :<input type="text" name="pnum"/><br/>
           <input type="button" value="Submit" onclick="dialer_check()"/><br/>
-          <select onchange="inst_check(this.value)" name="inst_name">
-            <option name="">Select your college</option>
-            <option name="NIT DGP">NIT DGP</option>
-            <option name="NIT ROURKELA">NIT ROURKELA</option>
-            <option name="SRM Chennai">SRM Chennai</option>
-            <option name="St. Xaviers' Calcutta">St. Xaviers' Calcutta</option>
+          <select onchange="inst_check(this.value)" name="inst_name"> <!--I can do the same for links and images as well; can be used in projects section-->
+            <option value="">Select your college</option>
+            <option value="NIT DGP">NIT DGP</option>
+            <option value="NIT ROURKELA">NIT ROURKELA</option>
+            <option value="SRM Chennai">SRM Chennai</option>
+            <option value="St. Xaviers' Calcutta">St. Xaviers' Calcutta</option>
           </select>
         </form>
       </div>
