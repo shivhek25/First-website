@@ -57,9 +57,10 @@
      }
    </style>
   </head>
-  <body><!--onload="window.print()"-->
+  <body onload="DateAndTime()"><!--onload="window.print()"-->
     <a href="#top"><div class="gototop"> Go to Top</div></a>
     <script>
+    try{
       function mouseontop(x,z){
         x.style.color="red";
         x.innerHTML="Hello, " + z +" !";
@@ -86,8 +87,17 @@
         if(confirm("Do you wish to call up Shivam ?"))
          window.location.href = "tel:9093244444";
       }
+      function DateAndTime(){
+        var d = new Date();
+        d= d.toLocaleString();
+        document.getElementById("dateandtime").innerHTML = d;
+        setInterval(DateAndTime,1000);
+      }
       var s = prompt("Enter your name :");
       document.write('<marquee onmouseover="mouseontop(this,s);stop()" onmouseout="mouseofftop(this),start()">' +"Welcome to my website !" +'</marquee>');
+    }catch(obj){
+      document.write(obj.message);
+    }
     </script>
     <div class="icon_group" id="top">
       <a href="tel:9093244444"><span class="icons glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
@@ -158,7 +168,10 @@
           </select>
         </form>
       </div>
+    <div>
+      <span id="dateandtime" style="color:yellow"></span>
       <div id="footer_text">&copy Shivam Singhal</div><!--setTimeOut() can help to delay time by which function is called-->
+    </div>
     </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="assets/js/bootstrap.min.js"></script>
