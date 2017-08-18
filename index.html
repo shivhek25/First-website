@@ -37,19 +37,19 @@
      }
      .footer{
        margin-top: 20px;
-       height: 40px;
+       height: 110px;
        background-color: purple;
      }
      #footer_text{
        float:right;
        font-size: 18px;
        padding-right: 15px;
-       padding-top: 5px;
+       padding-top:5px;
        color: yellow;
      }
      .gototop{
        position: fixed;
-       bottom: 40px;
+       bottom: 105px;
        right: 10px;
        padding-left: 1100px;
        font-size: 20px;
@@ -60,8 +60,21 @@
   <body>
     <a href="#top"><div class="gototop"> Go to Top</div></a>
     <script>
+      function mouseontop(x,z){
+        x.style.color="red";
+        x.innerHTML="Hello, " + z +" !";
+      }
+      function mouseofftop(y){
+        y.style.color="black";
+      }
+      function inst_check()
+      {
+        var p= document.contact.inst_name.value;
+        if(p == "NIT" || p == "NITDGP" || p == "NitDGP" || p == "NIT DGP" || p == "Nit Dgp")
+         alert("Hey, we are in the same college!");
+      }
       var s = prompt("Enter your name :");
-      document.write("Welcome to my website, " + s);
+      document.write('<marquee onmouseover="mouseontop(this,s);stop()" onmouseout="mouseofftop(this),start()">' +"Welcome to my website !" +'</marquee>');
     </script>
     <div class="icon_group" id="top">
       <a href="tel:9093244444"><span class="icons glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
@@ -119,6 +132,13 @@
 
     </div>
     <div class="footer">
+      <div>
+        <form name="contact">
+          Phone number :<input type="text" name="pnum"/><br/>
+          Institution :<input type="text" name="inst_name"/><br/>
+          <input type="button" value="Submit" onclick="inst_check()"/><br/>
+        </form>
+      </div>
       <div id="footer_text">&copy Shivam Singhal</div>
     </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
