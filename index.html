@@ -84,8 +84,17 @@
       }
       function dialer_check()
       {
-          if(confirm("Do you wish to call up Shivam ?"))
-           window.location.href = "tel:9093244444";
+          var a = document.contact.pnum.value;
+          if(a=="")
+          {
+            alert("Phone number is mandatory");
+            document.contact.pnum.focus();
+            return false;
+          }
+          else {
+            if(confirm("Phone number validated. Do you wish to call up Shivam ?"))
+             window.location.href = "tel:9093244444";
+           }
       }
       function DateAndTime(){
         var d = new Date();
@@ -158,7 +167,7 @@
       <div>
         <form name="contact">
           Phone number :<input type="text" name="pnum"/><br/>
-          <input type="button" value="Submit" onclick="dialer_check()"/><br/>
+          <input type="button" value="Submit" onclick="return dialer_check()"/><br/>
           <select onchange="inst_check(this.value)" name="inst_name"> <!--I can do the same for links and images as well; can be used in projects section-->
             <option value="">Select your college</option>
             <option value="NIT DGP">NIT DGP</option>
