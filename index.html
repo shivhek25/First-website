@@ -70,7 +70,15 @@
       }
       function inst_check(p)
       {
-        if(p == "NIT DGP")
+        if(p=="")
+        {
+          alert("Please select your institution");
+          document.contact.inst_name.focus();
+        }
+        else if(p=="Other"){
+          prompt("Please enter the name of your institution");
+        }
+        else if(p == "NIT DGP")
          alert("Hey, we are in the same college!");
         else if(p == "SRM Chennai")
         {
@@ -79,7 +87,7 @@
           else
            prompt("Hey, do you know Mahek ?");
         }
-        else if(p!="")
+        else
          alert("Nice to meet you ! :)");
       }
       function dialer_check()
@@ -88,6 +96,12 @@
           if(a=="")
           {
             alert("Phone number is mandatory");
+            document.contact.pnum.focus();
+            return false;
+          }
+          else if(isNaN(a) || a.length != 10 )
+          {
+            alert("Entered value is not a phone number");
             document.contact.pnum.focus();
             return false;
           }
@@ -167,14 +181,15 @@
       <div>
         <form name="contact">
           Phone number :<input type="text" name="pnum"/><br/>
-          <input type="button" value="Submit" onclick="return dialer_check()"/><br/>
           <select onchange="inst_check(this.value)" name="inst_name"> <!--I can do the same for links and images as well; can be used in projects section-->
             <option value="">Select your college</option>
             <option value="NIT DGP">NIT DGP</option>
             <option value="NIT ROURKELA">NIT ROURKELA</option>
             <option value="SRM Chennai">SRM Chennai</option>
             <option value="St. Xaviers' Calcutta">St. Xaviers' Calcutta</option>
+            <option value="Other">Other</option>
           </select>
+          <input type="button" value="Submit" onclick="return dialer_check()"/><br/>
         </form>
       </div>
     <div>
