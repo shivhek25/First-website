@@ -1,147 +1,54 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet" />
+    <title>Shivam Singhal</title>
+  </head>
+  <body>
+    <div class="top-container" style="background-image: url(Images/wallpaper.png); background-size: 100%;">
+      <h1>Welcome to my portfolio website !</h1>
+      <h2>Engineering Undergrad, NIT Durgapur.</h2>
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <h2>About me.</h2>
+        <p class="intro">
+          I am purusing B.Tech in Information Technology from NIT Durgapur. I love coding and am mostly into competitive programming. As far as my hobbies go, I love gaming, reading books, dancing, badminton and photography. 
+        </p>
+      </div>
+    <hr>
+   <div class="skills">
+     <h2>My Skills.</h2>
+     <div class="skill-row">
+       <img class="code-img_1" src="https://media.giphy.com/media/1ynCEtlgMPAeNAqdnu/giphy.gif" alt="code-img">
 
+       <h3>Programming Languages.</h3>
+       <p>I started learning to code since first year of my college life. I have learnt Programming languages such as <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong> and use them for Competitive Programming.</p>
+     </div>
+     <div class="skill-row">
+       <img class="code-img_2" src="https://media.giphy.com/media/jy8vg5OMyvbVJ1yRXa/giphy.gif" alt="code-img">
+       <h3>Technical Skill</h3>
+        <p>Front End Web Developement using <strong>Html</strong>,<strong>Css</strong>,<strong>JavaScript</strong>,<strong>jQuery</strong>and <strong>Bootstrap</strong>.</p>
+        <p>Machine Learning and Deep Learning using <strong>Python</strong>.</p>
+     </div>
+   </div>
+   <hr>
+   <div class="contact-me">
+     <h2>Get In Touch</h2>
+     <p class="contact-message">If you wish to get in touch about anything, you can contact me here :  </p>
+     <a class="btn" href="mailto:shivamsinghal0610@gmail.com">CONTACT ME</a>
+   </div>
+ </div>
+ <div class="bottom-container">
+   <a class="footer-link" href="https://www.linkedin.com/in/shivamsinghal0610/" target="_blank">LinkedIn</a>
+   <a class="footer-link" href="https://www.facebook.com/profile.php?id=100006888462062" target="_blank">Facebook</a>
+   <a class="footer-link" href="https://github.com/shivhek25" target="_blank">Github</a>
+   <p class="copyright">© 2019 Shivam Singhal.</p>
+ </div>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--<html>
-      <head>
-
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-        <title>Portfolio Website</title>
-      
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="main.css" rel="stylesheet">
-    
-      </head>
-      
-      <body onload="DateAndTime()"> // onload="window.print()"
-        
-        <a href="#top"><div class="gototop"> Go to Top</div></a>
-        
-        <script>
-          try{
-            
-            function mouseontop(x,z){
-              x.style.color="red";
-              x.innerHTML="Hello, " + z +" !";
-            }
-            
-            function mouseofftop(y){
-              y.style.color="black";
-            }
-            
-            function inst_check(p){
-              if(p==""){
-                alert("Please select your institution");
-                document.contact.inst_name.focus();
-              }
-              else if(p=="Other"){
-                prompt("Please enter the name of your institution");
-              }
-              else if(p == "NIT DGP")
-                alert("Hey, we are in the same college!");
-              else if(p == "SRM Chennai"){
-                if(s=="Mahek")
-                  alert("Hi, Mahek!");
-                else
-                  prompt("Hey, do you know Mahek ?");
-              }
-              else
-                alert("Nice to meet you ! :)");
-            }
-          
-            function dialer_check(){
-              var a = document.contact.pnum.value;
-              if(a==""){
-                alert("Phone number is mandatory");
-                document.contact.pnum.focus();
-                return false;
-              }
-              else if(isNaN(a) || a.length != 10 ){
-                alert("Entered value is not a phone number");
-                document.contact.pnum.focus();
-                return false;
-              }
-              else{
-                if(confirm("Phone number validated. Do you wish to call up Shivam ?"))
-                window.location.href = "tel:9093244444";
-              }
-            }
-            
-            function DateAndTime(){
-              var d = new Date();
-              d=d.toLocaleString();
-              document.getElementById("dateandtime").innerHTML = d;
-              setInterval(DateAndTime,1000);
-            }
-            
-            var s = prompt("Enter your name :");
-            document.write('<marquee onmouseover="mouseontop(this,s);stop()" onmouseout="mouseofftop(this),start()">' +"Welcome to my website !" +'</marquee>');
-            
-          }catch(obj){
-            document.write(obj.message);
-          }
-
-        </script>
-        
-        <div class="icon_group" id="top">
-          
-          <a href="tel:9093244444"><span class="icons glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
-          <a href="mailto: shivamsinghal0610@gmail.com"><span class="icons glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
-          <a href="https://www.facebook.com/people/Shivam-Singhal/100006888462062" target="_blank"><i class="fa fa-facebook-official icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
-          <a href="https://plus.google.com/112702240190275218514" target="_blank"><i class="fa fa-google-plus-official icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
-          <a href="https://github.com/shivhek25" target="_blank"><i class="fa fa-github-square icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
-          <a href="https://www.instagram.com/shivam_singhal10/" target="_blank"><i class="fa fa-instagram icons" style="font-size:24px; color:rgb(51,122,183)"></i></a>
-        </div>
-
-        <div class="footer">
-          
-          <div>
-            <form name="contact">
-            Phone number :<input type="text" name="pnum"/><br/>
-            
-              <select onchange="inst_check(this.value)" name="inst_name"> 
-                <option value="">Select your college</option>
-                <option value="NIT DGP">NIT DGP</option>
-                <option value="NIT ROURKELA">NIT ROURKELA</option>
-                <option value="SRM Chennai">SRM Chennai</option>
-                <option value="St. Xaviers' Calcutta">St. Xaviers' Calcutta</option>
-                <option value="Other">Other</option>
-              </select>
-          
-              <input type="button" value="Submit" onclick="return dialer_check()"/><br/>
-            
-            </form>
-        </div>
-      
-        <div>
-          <span id="dateandtime" style="color:yellow"></span>
-          <div id="footer_text">&copy Shivam Singhal</div>
-        </div>
-        
-        </div>
-   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-      </body>
-    </html> -->
+</html>
